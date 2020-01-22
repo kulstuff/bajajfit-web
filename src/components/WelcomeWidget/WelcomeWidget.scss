@@ -1,0 +1,82 @@
+@import "../../App.scss";
+
+.WelcomeWidget {
+  width: 517px;
+  height: 163px;
+
+  background: $white;
+  border-radius: 25px;
+
+  &__Title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+
+    /* Main Color */
+
+    color: $main-color;
+    position: absolute;
+    width: 302px;
+    height: 35px;
+    left: 182px;
+    top: 16px;
+  }
+
+  &__Info {
+    position: absolute;
+    width: 279px;
+    height: 36px;
+    left: 205px;
+    top: 60px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 126.5%;
+    /* or 18px */
+
+    text-align: right;
+
+    color: #000000;
+  }
+
+  &__Button {
+    position: absolute;
+    width: 309px;
+    height: 35px;
+
+    left: 240px;
+    top: 107px;
+
+    /* Gradient 1 */
+
+    background: $gradient-1;
+    box-shadow: 5px 5px 16px rgba(49, 165, 136, 0.3);
+    border-radius: 15px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 126.5%;
+    /* identical to box height, or 23px */
+
+    text-align: center;
+
+    border: 0;
+
+    /* Light */
+
+    color: $light;
+
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 0px 6px rgba(49, 165, 136, 0.9);
+      //   transform: translateY(-1%);
+    }
+  }
+}
