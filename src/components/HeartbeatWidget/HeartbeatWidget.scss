@@ -1,0 +1,81 @@
+@import "../../App.scss";
+
+.HeartbeatWidget {
+  position: absolute;
+  width: 252px;
+  height: 198px;
+  left: 335px;
+  top: 242px;
+  // border: 1px solid black;
+
+  &__Heartbeat {
+    position: absolute;
+    width: 99px;
+    height: 23px;
+    left: 0px;
+    top: 0px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: $main-color;
+  }
+  &__InnerBox {
+    position: absolute;
+    width: 252px;
+    height: 159px;
+    left: 0px;
+    top: 39px;
+    // border: 1px solid black;
+
+    /* White Color */
+
+    background: #ffffff;
+    border-radius: 20px;
+  }
+  &__BPMValue {
+    position: absolute;
+    width: 131px;
+    height: 103px;
+    left: 16px;
+    top: 55px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 76px;
+    line-height: 103px;
+
+    /* Main Color */
+
+    color: #089bab;
+  }
+  &__BPM {
+    position: absolute;
+    width: 131px;
+    height: 103px;
+    left: 117px;
+    top: 76px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 103px;
+
+    /* Main Color */
+
+    color: $main-color;
+  }
+  &__HeartbeatPicture {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    left: 147px;
+    top: 10px;
+    background-image: url("../../assets/img/heartbeat-svgrepo-com\ 1.png");
+    background-size: cover;
+  }
+}

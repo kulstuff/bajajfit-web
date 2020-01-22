@@ -1,18 +1,15 @@
 import React from "react";
 import "./App.scss";
-import DataWidget from "./components/dataWidget/DataWidget";
+// import DataWidget from "./components/dataWidget/DataWidget";
+// import CurrencyWidget from "./components/CurrencyWidget/CurrencyWidget";
+import HeartbeatWidget from "./components/HeartbeatWidget/HeartbeatWidget";
+//import CaloriesWidget from "./components/CaloriesWidget/CaloriesWidget";
+
 
 let App = () => {
   return (
     <div className="App">
-      <DataWidget
-        name="Shreyansh Rana"
-        age="21"
-        weight="69"
-        height="182"
-        blood="B+"
-        avatar="https://www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png"
-      />
+     <HeartbeatWidget BPM="99" />
     </div>
   );
 };
