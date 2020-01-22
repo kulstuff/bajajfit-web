@@ -1,0 +1,31 @@
+@import "../../App.scss";
+
+.CaloriesWidget {
+  position: absolute;
+  width: 432px;
+  height: 214px;
+  left: 249px;
+  top: 799px;
+
+  &__CaloriesText {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 3px;
+    top: 0px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: #089bab;
+  }
+  &__InnerBox {
+    background: #ffffff;
+    border-radius: 20px;
+  }
+}
