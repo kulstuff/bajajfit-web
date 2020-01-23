@@ -6,6 +6,9 @@ $gradient-1: linear-gradient(90.53deg, #0896a6 0.58%, #9cc0c4 99.45%);
 
 * {
   color: $white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -22,4 +25,25 @@ a {
 
 li {
   list-style: none;
+}
+
+.Overlap {
+  width: 90vw;
+  height: 100vh;
+  background-color: $light;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  border-radius: 50px 0 0 50px;
+}
+
+.Sidebar {
+  width: 20vw;
+  height: 100vh;
+  background-color: $white;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
 }

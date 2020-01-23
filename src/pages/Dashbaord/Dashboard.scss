@@ -1,0 +1,100 @@
+@import "../../App.scss";
+
+.Position {
+  &__WelcomeWidget {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+    @media screen and (max-width: 1368px) {
+      transform: scale(0.6);
+      left: 0px;
+      top: 0px;
+    }
+  }
+
+  &__CurrencyWidget {
+    position: absolute;
+    left: 1200px;
+    top: 80px;
+    @media screen and (max-width: 1368px) {
+      transform: scale(0.6);
+      left: 700px;
+      top: 30px;
+    }
+  }
+
+  &__BMIWidget {
+    position: absolute;
+    left: 200px;
+    top: 245px;
+    @media screen and (max-width: 1368px) {
+      transform: scale(0.6);
+      top: 150px;
+    }
+  }
+
+  &__BHIWidget {
+    position: absolute;
+    left: 950px;
+    top: 245px;
+    @media screen and (max-width: 1368px) {
+      top: 150px;
+      left: 700px;
+      transform: scale(0.6);
+    }
+  }
+
+  &__HeartbeatWidget {
+    position: absolute;
+    left: 210px;
+    // top: 100px;
+    @media screen and (max-width: 1368px) {
+      transform: scale(0.6);
+      //   top: 63px;
+      left: 200px;
+    }
+  }
+
+  &__ActivityWidget {
+    position: absolute;
+    left: 200px;
+    top: 490px;
+    @media screen and (max-width: 1368px) {
+      transform: scale(0.6);
+      top: 250px;
+      left: 70px;
+    }
+  }
+
+  &__CaloriesWidget {
+    position: absolute;
+    float: left;
+    top: 40px;
+    left: -50px;
+    @media screen and (max-width: 1368px) {
+      transform: scale(0.6);
+      top: 50px;
+      left: 50px;
+    }
+  }
+
+  &__DataWidget {
+    position: absolute;
+    left: 55px;
+    top: 100px;
+    @media screen and (max-width: 1368px) {
+      transform: scale(0.7);
+      left: 15px;
+    }
+  }
+  &__AdWidget {
+    position: absolute;
+    left: 55px;
+    top: 350px;
+    @media screen and (max-width: 1368px) {
+      transform: scale(0.6);
+      top: 250px;
+      left: 40px;
+    }
+  }
+}
