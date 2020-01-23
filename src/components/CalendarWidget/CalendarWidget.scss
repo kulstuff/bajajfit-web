@@ -1,0 +1,24 @@
+@import "../../App.scss";
+
+.CalendarWidget {
+  width: 300px;
+  height: 300px;
+}
+.react-calendar {
+  border-radius: 20px;
+  border: 0;
+  padding: 10px;
+  background-color: $main-color;
+  font-family: "Raleway";
+  font-weight: bold;
+
+  &__tile--active {
+    background-color: darken($main-color, 15%);
+    border-radius: 5px;
+  }
+  abbr {
+    font-family: "Open Sans";
+    font-weight: bold;
+    border-radius: 50%;
+  }
+}

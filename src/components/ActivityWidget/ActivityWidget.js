@@ -116,7 +116,7 @@ class ActivityWidget extends Component {
     }
     return (
       <div className="test ActivityWidget">
-        <h1>test</h1>
+        <h1 className="ActivityWidget__Title">Your Performance</h1>
         <div className="ActivityWidget__Chart ">
           <Line
             id="canvas"

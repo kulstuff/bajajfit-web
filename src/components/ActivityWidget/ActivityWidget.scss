@@ -9,6 +9,23 @@
 
   background: $white;
 
+  &__Title {
+    position: absolute;
+    width: 172px;
+    height: 23px;
+    left: 2px;
+    top: -10%;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: #089bab;
+  }
   &__Chart {
     width: 550px;
     position: absolute;
@@ -30,6 +47,7 @@
     &-Container {
       position: absolute;
       right: 5%;
+      top: 5%;
     }
   }
 }
