@@ -6,6 +6,9 @@ $gradient-1: linear-gradient(90.53deg, #0896a6 0.58%, #9cc0c4 99.45%);
 
 * {
   color: $white;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
