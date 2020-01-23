@@ -3,13 +3,58 @@ import { Line } from "react-chartjs-2";
 import "./ActivityWidget.scss";
 
 let stepData = {
-  steps: [5734, 12694, 8801, 21301, 17690, 8499, 2154],
-  dates: ["17th", "18th", "19th", "20th", "21st", "22nd", "23rd"]
+  steps: [
+    5734,
+    12694,
+    8801,
+    21301,
+    17690,
+    8499,
+    2154,
+    5734,
+    12694,
+    8801,
+    21301,
+    17690,
+    8499,
+    2154
+  ],
+  dates: [
+    "17th",
+    "18th",
+    "19th",
+    "20th",
+    "21st",
+    "22nd",
+    "23rd",
+    "17th",
+    "18th",
+    "19th",
+    "20th",
+    "21st",
+    "22nd",
+    "23rd"
+  ]
 };
 
 let heartbeatData = {
-  dates: ["17th", "18th", "19th", "20th", "21st", "22nd", "23rd"],
-  heartbeat: [89, 87, 85, 80, 81, 78, 70]
+  dates: [
+    "17th",
+    "18th",
+    "19th",
+    "20th",
+    "21st",
+    "22nd",
+    "23rd",
+    "17th",
+    "18th",
+    "19th",
+    "20th",
+    "21st",
+    "22nd",
+    "23rd"
+  ],
+  heartbeat: [89, 87, 85, 80, 81, 78, 70, 89, 87, 85, 80, 81, 78, 70]
 };
 
 class ActivityWidget extends Component {
@@ -115,14 +160,14 @@ class ActivityWidget extends Component {
       heartbeatActiveClass = heartbeatActiveClass.slice(0, 23);
     }
     return (
-      <div className="test ActivityWidget">
+      <div className=" ActivityWidget">
         <h1 className="ActivityWidget__Title">Your Performance</h1>
         <div className="ActivityWidget__Chart ">
           <Line
             id="canvas"
             data={this.state.data}
-            width={100}
-            height={50}
+            width={"1000px"}
+            height={"500px"}
             options={{
               legend: {
                 labels: {

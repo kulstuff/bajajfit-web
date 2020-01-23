@@ -147,7 +147,7 @@ class Navbar extends Component {
                 <p className={homeButtonClass.text}>Home</p>
               </div>
             </Link>
-            <Link to="/Journal" onClick={toggleJournal}>
+            <Link to="/journal" onClick={toggleJournal}>
               <div className={journalButtonClass.container}>
                 <ion-icon
                   name="journal"
@@ -156,7 +156,7 @@ class Navbar extends Component {
                 <p className={journalButtonClass.text}>Journal</p>
               </div>
             </Link>
-            <Link to="/Tasks" onClick={toggleTasks}>
+            <Link to="/tasks" onClick={toggleTasks}>
               <div className={tasksButtonClass.container}>
                 <ion-icon
                   name="trophy"
@@ -165,7 +165,7 @@ class Navbar extends Component {
                 <p className={tasksButtonClass.text}>Tasks</p>
               </div>
             </Link>
-            <Link to="/Bajaar" onClick={toggleBajaar}>
+            <Link to="/bajaar" onClick={toggleBajaar}>
               <div className={bajaarButtonClass.container}>
                 <ion-icon name="cart" class={bajaarButtonClass.icon}></ion-icon>
                 <p className={bajaarButtonClass.text}>Bajaar</p>

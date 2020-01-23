@@ -7,6 +7,7 @@
   left: 249px;
   top: 799px;
 
+  // border: 1px solid black;
   &__CaloriesText {
     position: absolute;
     width: 79px;
@@ -22,10 +23,117 @@
 
     /* Main Color */
 
-    color: #089bab;
+    color: $main-color;
   }
   &__InnerBox {
+    position: absolute;
+    width: 432px;
+    height: 179px;
+    left: 0px;
+    top: 35px;
+    // border: 1px solid black;
+
+    /* White Color */
+
     background: #ffffff;
     border-radius: 20px;
+  }
+  &__Recommended {
+    position: absolute;
+    width: 194px;
+    height: 42px;
+    left: 15px;
+    top: 15px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* Main Color */
+
+    color: $main-color;
+  }
+  &__LastMeal {
+    position: absolute;
+    width: 152px;
+    height: 42px;
+    left: 266px;
+    top: 17px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+
+    /* Main Color */
+
+    color: $main-color;
+  }
+  &__CalValue {
+    position: absolute;
+    width: 204px;
+    height: 103px;
+    left: 185px;
+    top: 70px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 76px;
+    line-height: 103px;
+    display: flex;
+    align-items: center;
+
+    /* Main Color */
+
+    color: $main-color;
+  }
+  &__Cal {
+    position: absolute;
+    width: 204px;
+    height: 103px;
+    left: 366px;
+    top: 85px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 103px;
+    display: flex;
+    align-items: center;
+
+    /* Main Color */
+
+    color: $main-color;
+  }
+  &__AddMeal {
+    position: absolute;
+    width: 91px;
+    height: 23px;
+    left: 66px;
+    top: 115px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: $main-color;
+  }
+  &__AddButton {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 13px;
+    top: 101px;
+
+    background-image: url("../../assets/img/mdi_add_circle.png");
+    background-size: cover;
   }
 }

@@ -16,7 +16,7 @@ let DataWidget = props => {
       <div className="DataWidget__Holder">
         <p className="DataWidget__Name">{name}</p>
         <p className="DataWidget__Age">{age} Years</p>
-        <div className="DataWidget__Info">
+        <div className="DataWidget__Info clearfix">
           <div className="col col-4 DataWidget__Info-Heading">Weight</div>
           <div className="col col-4 DataWidget__Info-Heading">Height</div>
           <div className="col col-4 DataWidget__Info-Heading">Blood</div>
