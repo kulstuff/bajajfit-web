@@ -13,6 +13,5 @@ let App = () => {
       <AdWidget />
     </div>
   );
-};
 
 export default App;

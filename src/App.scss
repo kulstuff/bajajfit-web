@@ -12,5 +12,17 @@ $gradient-1: linear-gradient(90.53deg, #0896a6 0.58%, #9cc0c4 99.45%);
 }
 
 body {
-  background-color: lighten($main-color, 55%);
+  background-color: lighten($light, 0%);
+}
+
+button {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }

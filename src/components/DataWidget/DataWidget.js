@@ -8,7 +8,7 @@ import "./DataWidget.scss";
 let DataWidget = props => {
   let { name, age, weight, height, blood, avatar } = props;
   return (
-    <div className="test DataWidget">
+    <div className="DataWidget">
       <div
         className="DataWidget__Avatar"
         style={{ backgroundImage: "url(" + avatar + ")" }}
