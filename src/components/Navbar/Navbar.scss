@@ -1,0 +1,53 @@
+@import "../../App.scss";
+
+.Navbar {
+  height: 100vh;
+  width: 150px;
+  background: $main-color;
+  &__Logo {
+    background-image: url("../../assets/img/logo.png");
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 15px;
+    top: 0px;
+  }
+  &__Plant {
+    background-image: url("../../assets/img/plant.png");
+    position: absolute;
+    width: 143px;
+    height: 154px;
+    left: 15px;
+    bottom: 0;
+  }
+  &__Button {
+    margin: 15px 0;
+    padding: 7.5px 5px;
+    width: 130px;
+    height: 95px;
+    font-size: 50px;
+    transition: ease-in 0.1s;
+    &-Selected {
+      color: $main-color;
+      background-color: $light;
+      border-radius: 10px 0 0 10px;
+    }
+    &-Icon {
+      transition: all 0.1s;
+      visibility: visible !important;
+    }
+    &-Text {
+      font-size: 12px;
+      font-weight: bold;
+      transition: all 0.1s;
+      padding: 0 7.5px;
+    }
+    &-Container {
+      //   border: 1px solid white;
+      position: absolute;
+      top: 50%;
+      left: 2%;
+      transform: translateY(-50%);
+    }
+  }
+}
