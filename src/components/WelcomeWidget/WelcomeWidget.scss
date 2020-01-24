@@ -79,4 +79,17 @@
       //   transform: translateY(-1%);
     }
   }
+
+  &__blob {
+    position: relative;
+    left: -10px;
+    top: -15px;
+  }
+
+  &__read {
+    position: relative;
+    left: -175px;
+    top: -35px;
+    width: 180px;
+  }
 }

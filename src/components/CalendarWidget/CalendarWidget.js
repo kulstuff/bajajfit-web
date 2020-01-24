@@ -14,7 +14,7 @@ class CalendarWidget extends Component {
       console.log(date);
     };
     return (
-      <div className="test CalendarWidget">
+      <div className="CalendarWidget">
         <Calendar value={this.state.date} onChange={Show} />
       </div>
     );

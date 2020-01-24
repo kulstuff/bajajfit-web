@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import WelcomeWidget from "../../components/WelcomeWidget/WelcomeWidget";
 import CurrencyWidget from "../../components/CurrencyWidget/CurrencyWidget";
 import BMIWidget from "../../components/BMIWidget/BMIWidget";
+import StepsWidget from "../../components/StepsWidget/StepsWidget";
 import BHIWidget from "../../components/BHIWidget/BHIWidget";
 import HeartbeatWidget from "../../components/HeartbeatWidget/HeartbeatWidget";
 import ActivityWidget from "../../components/ActivityWidget/ActivityWidget";
@@ -28,6 +29,8 @@ class Dashboard extends Component {
       bpm: "77",
       bhi: "77",
       bmi: "21.7",
+      completed_steps: "2000",
+      required_steps: "8000",
       required_calories: "1900",
       lastmeal_timing: "2 AM",
       calories: "1000",
@@ -56,6 +59,13 @@ class Dashboard extends Component {
 
           <div className="Position__BHIWidget">
             <BHIWidget BHI={this.state.bhi} />
+          </div>
+
+          <div className="Position__StepsWidget">
+            <StepsWidget
+              completed_steps={this.state.completed_steps}
+              required_steps={this.state.required_steps}
+            />
           </div>
 
           <div className="Position__ActivityWidget">

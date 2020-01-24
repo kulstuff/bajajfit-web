@@ -1,17 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Navbar from "../../components/Navbar/Navbar";
 
-import DataWidget from "../../components/DataWidget/DataWidget";
 import AdWidget from "../../components/AdWidget/AdWidget";
 import CurrencyWidget from "../../components/CurrencyWidget/CurrencyWidget";
-import ActivityWidget from "../../components/ActivityWidget/ActivityWidget";
 
 import "./Bajaar.scss";
-import CalorieWidgetLarge from "../../components/CalorieWidgetLarge/CalorieWidgetLarge";
-import TaskWidget from "../../components/TaskWidget/TaskWidget";
-import CaloriesWidget from "../../components/CaloriesWidget/CaloriesWidget";
 import ShoppingItem from "../../components/ShoppingItem/ShoppingItem";
 
 class Bajaar extends Component {

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Navbar from "../../components/Navbar/Navbar";
 
-import DataWidget from "../../components/DataWidget/DataWidget";
+import CalendarWidget from "../../components/CalendarWidget/CalendarWidget";
 import AdWidget from "../../components/AdWidget/AdWidget";
 import CurrencyWidget from "../../components/CurrencyWidget/CurrencyWidget";
 import ActivityWidget from "../../components/ActivityWidget/ActivityWidget";
@@ -49,15 +49,8 @@ class Journal extends Component {
           </div>
         </div>
         <div className="Sidebar">
-          <div className="Position__DataWidget">
-            <DataWidget
-              name={this.state.name}
-              age={this.state.age}
-              weight={this.state.weight}
-              height={this.state.height}
-              blood={this.state.blood}
-              avatar={this.state.img_url}
-            />
+          <div className="Position-Journal__CalendarWidget">
+            <CalendarWidget />
           </div>
           <div className="Position__AdWidget">
             <AdWidget />
