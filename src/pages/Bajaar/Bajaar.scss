@@ -1,0 +1,27 @@
+@import "../../App.scss";
+
+.ToggleBajaar {
+  background-color: white;
+  width: 400px;
+  height: 62px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: $main-color;
+  position: relative;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  top: 10%;
+
+  &__Text {
+    border-radius: 30px;
+    padding: 10px 0;
+    color: $main-color;
+    text-align: center;
+    background-color: $white;
+  }
+  &__Selected {
+    background-color: $main-color;
+    color: $white;
+  }
+}

@@ -5,7 +5,7 @@ import "./TaskWidget.scss";
 
 let TaskWidget = props => {
   let { targetText, progress, target, hp, bp, sender } = props;
-  console.log(parseFloat(progress / target));
+  console.log(props);
   return (
     <div className="TaskWidget">
       <h1 className="TaskWidget__Title">{targetText}</h1>
@@ -21,7 +21,9 @@ let TaskWidget = props => {
           "100%": "#87d068"
         }}
       />
-      <h1 className="TaskWidget__Progress">{(100 * progress) / target} %</h1>
+      <h1 className="TaskWidget__Progress">
+        {((100 * progress) / target).toFixed(1)} %
+      </h1>
       <div className="TaskWidget__Prize">
         <CurrencyWidget HP={hp} BP={bp} />
       </div>

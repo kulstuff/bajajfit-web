@@ -5,6 +5,7 @@
   height: 322px;
   background: #ffffff;
   border-radius: 20px;
+  margin: 0 5px;
 
   &__Title {
     color: $main-color;
@@ -45,13 +46,13 @@
   &__Prize {
     transform: scale(0.5);
     position: relative;
-    top: 50px;
+    top: 25px;
   }
   &__Sender {
     position: relative;
     width: 200px;
     left: -93px;
-    top: -80px;
+    top: -130px;
     // top: -200px;
     /* Main Color */
 

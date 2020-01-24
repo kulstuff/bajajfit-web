@@ -1,0 +1,17 @@
+@import "../../App.scss";
+
+.Position {
+  &__SystemTasks {
+    position: relative;
+    left: 100px;
+    top: 150px;
+    margin-top: 50px;
+  }
+  &__Task-Title {
+    position: relative;
+    top: -10px;
+    left: 10px;
+    color: $main-color;
+    font-size: 20px;
+  }
+}
