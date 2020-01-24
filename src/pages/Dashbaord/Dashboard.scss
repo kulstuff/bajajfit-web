@@ -81,10 +81,11 @@
   &__DataWidget {
     position: absolute;
     left: 55px;
-    top: 100px;
+    top: 60px;
     @media screen and (max-width: 1368px) {
       transform: scale(0.7);
       left: 15px;
+      top: 20px;
     }
   }
   &__AdWidget {

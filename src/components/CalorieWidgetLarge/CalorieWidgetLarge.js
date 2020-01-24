@@ -1,32 +1,28 @@
 import React, { Component } from "react";
 
 import "./CalorieWIdgetLarge.scss";
-import { forEach } from "async";
 
 class CalorieWidgetLarge extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      breakfast: [
-        { food: "Aloo Paratha", qty: "2", calories: "390" },
-        { food: "Curd", qty: "1", calories: "30" },
-        { food: "Butter", qty: "1", calories: "100" },
-        { food: "Milk", qty: "1", calories: "100" }
-      ],
-      lunch: [
-        { food: "Aloo Paratha", qty: "2", calories: "390" },
-        { food: "Curd", qty: "1", calories: "30" },
-        { food: "Butter", qty: "1", calories: "100" },
-        { food: "Milk", qty: "1", calories: "100" }
-      ],
-      dinner: [
-        { food: "Aloo Paratha", qty: "2", calories: "390" },
-        { food: "Curd", qty: "1", calories: "30" },
-        { food: "Butter", qty: "1", calories: "100" },
-        { food: "Milk", qty: "1", calories: "100" }
-      ]
-    };
-  }
+  state = {
+    breakfast: [
+      { food: "Aloo Paratha", qty: "2", calories: "390" },
+      { food: "Curd", qty: "1", calories: "30" },
+      { food: "Butter", qty: "1", calories: "100" },
+      { food: "Milk", qty: "1", calories: "100" }
+    ],
+    lunch: [
+      { food: "Aloo Paratha", qty: "2", calories: "390" },
+      { food: "Curd", qty: "1", calories: "30" },
+      { food: "Butter", qty: "1", calories: "100" },
+      { food: "Milk", qty: "1", calories: "100" }
+    ],
+    dinner: [
+      { food: "Aloo Paratha", qty: "2", calories: "390" },
+      { food: "Curd", qty: "1", calories: "30" },
+      { food: "Butter", qty: "1", calories: "100" },
+      { food: "Milk", qty: "1", calories: "100" }
+    ]
+  };
   render() {
     let printFood = item => {
       return (
@@ -48,12 +44,14 @@ class CalorieWidgetLarge extends Component {
       );
     };
 
+    console.log(this.props);
+    let { RecCal, Cal } = this.props;
     return (
-      <div className="test CalorieWidgetLarge">
+      <div className="CalorieWidgetLarge">
         <h1 className="CalorieWidgetLarge__Title">Calories</h1>
         <div className="col col-4 CalorieWidgetLarge__Info">
           <div className="CalorieWidgetLarge__Info-Recommended">
-            Recommended Calories <br /> 2900 Cal
+            Recommended Calories <br /> {RecCal} Cal
           </div>
           <button className="CalorieWidgetLarge__Add-Meal">
             <ion-icon
@@ -64,7 +62,7 @@ class CalorieWidgetLarge extends Component {
               Add Meal
             </p>
           </button>
-          <div className="CalorieWidgetLarge__Total-Calories">1900 Cal</div>
+          <div className="CalorieWidgetLarge__Total-Calories">{Cal} Cal</div>
         </div>
         <div className="CalorieWidgetLarge__Divider"></div>
         <div className="col col-8 CalorieWidgetLarge__Data">

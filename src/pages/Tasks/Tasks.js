@@ -7,10 +7,10 @@ import AdWidget from "../../components/AdWidget/AdWidget";
 import CurrencyWidget from "../../components/CurrencyWidget/CurrencyWidget";
 import ActivityWidget from "../../components/ActivityWidget/ActivityWidget";
 
-import "./Journal.scss";
+import "./Tasks.scss";
 import CalorieWidgetLarge from "../../components/CalorieWidgetLarge/CalorieWidgetLarge";
 
-class Journal extends Component {
+class Tasks extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -38,27 +38,9 @@ class Journal extends Component {
           <div className="Position__CurrencyWidget">
             <CurrencyWidget HP={this.state.hp} BP={this.state.bp} />
           </div>
-          <div className="Position__ActivityWidget Position-Journal__ActivityWidget">
-            <ActivityWidget />
-          </div>
-          <div className="Position-Journal__CalorieWidgetLarge">
-            <CalorieWidgetLarge
-              RecCal={this.state.required_calories}
-              Cal={this.state.calories}
-            />
-          </div>
         </div>
         <div className="Sidebar">
-          <div className="Position__DataWidget">
-            <DataWidget
-              name={this.state.name}
-              age={this.state.age}
-              weight={this.state.weight}
-              height={this.state.height}
-              blood={this.state.blood}
-              avatar={this.state.img_url}
-            />
-          </div>
+          <div className="Position__DataWidget"></div>
           <div className="Position__AdWidget">
             <AdWidget />
           </div>
@@ -67,4 +49,4 @@ class Journal extends Component {
     );
   }
 }
-export default Journal;
+export default Tasks;

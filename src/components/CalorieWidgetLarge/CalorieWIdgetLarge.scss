@@ -12,7 +12,7 @@
 
   &__Title {
     color: $main-color;
-    position: absolute;
+    position: relative;
     top: -7%;
     left: 10px;
     font-size: 20px;
@@ -26,7 +26,7 @@
       font-family: Montserrat;
       color: $main-color;
       text-align: center;
-      position: absolute;
+      position: relative;
       left: 10%;
       top: 15%;
     }
@@ -37,8 +37,8 @@
     height: 100%;
     color: $main-color;
     position: relative;
-    top: 62%;
-    left: 37%;
+    top: 10%;
+    left: 40%;
     transform: translate(-50%, -50%);
   }
   &__Meal {
@@ -66,9 +66,9 @@
     height: 48px;
     width: 175px;
     border-radius: 30px;
-    position: absolute;
-    left: 11.5%;
-    top: 35%;
+    position: relative;
+    left: 65px;
+    top: 100px;
     box-shadow: 0 10px 10px rgba($main-color, 0.3);
     transition: ease 0.5s;
     &:hover {
@@ -86,9 +86,9 @@
     }
   }
   &__Total-Calories {
-    position: absolute;
-    left: 10%;
-    bottom: 20%;
+    position: relative;
+    left: 20%;
+    top: 40%;
     font-size: 50px;
     font-family: Montserrat;
     color: $main-color;
@@ -97,7 +97,7 @@
     height: 50%;
     background-color: $main-color;
     width: 5px;
-    position: absolute;
+    position: relative;
     left: 42%;
     top: 45%;
     transform: translateY(-50%);

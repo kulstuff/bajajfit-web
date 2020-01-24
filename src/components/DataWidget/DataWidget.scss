@@ -10,7 +10,6 @@ $holder__bg: $gradient-1;
 .DataWidget {
   //   border: 1px solid black;
 
-  background-color: $light;
   height: $avatar_size;
   width: $avatar_size;
   left: 50%;
@@ -31,6 +30,16 @@ $holder__bg: $gradient-1;
     border-radius: 20px;
   }
 
+  &__Avatar {
+    background-size: cover;
+    height: 100%;
+    border-radius: 50%;
+    border: 6px solid $white;
+    position: relative;
+    // transform: translate(-50%, -50%);
+    left: 90%;
+    top: 50%;
+  }
   &__Name {
     font-family: Raleway;
     font-style: normal;
