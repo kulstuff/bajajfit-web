@@ -1,0 +1,67 @@
+@import "../../App.scss";
+
+.ShoppingItem {
+  color: $main-color;
+  cursor: pointer;
+  //   height: 400px;
+  padding: 30px 0px;
+  width: 280px;
+  border-radius: 30px;
+  margin: 0 30px;
+  background-color: $white;
+  box-shadow: 0 10px 40px rgba($main-color, 0.3);
+  transition: all 0.5s;
+  @media screen and (max-width: 1400px) {
+    padding: 5px;
+    padding-top: 10px;
+    width: 125px;
+    border-radius: 10px;
+  }
+  &:hover {
+    box-shadow: 0 5px 5px rgba($main-color, 0.6);
+  }
+
+  &__Img {
+    border-radius: 50%;
+    background-color: $main-color;
+    width: 125px;
+    height: 125px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-position: center;
+    background-size: cover;
+    @media screen and (max-width: 1400px) {
+      //   padding: 5px;
+      width: 65px;
+      height: 65px;
+    }
+  }
+  &__Name {
+    color: $main-color;
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    font-family: Montserrat;
+    padding-top: 25px;
+    @media screen and (max-width: 1400px) {
+      //   padding: 5px;
+      font-size: 12px;
+    }
+  }
+  &__Cost {
+    color: $main-color;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: bold;
+    padding: 5px;
+    @media screen and (max-width: 1400px) {
+      //   padding: 5px;
+      font-size: 12px;
+    }
+  }
+}

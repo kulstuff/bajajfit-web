@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Navbar from "../../components/Navbar/Navbar";
 
@@ -10,6 +11,8 @@ import ActivityWidget from "../../components/ActivityWidget/ActivityWidget";
 import "./Bajaar.scss";
 import CalorieWidgetLarge from "../../components/CalorieWidgetLarge/CalorieWidgetLarge";
 import TaskWidget from "../../components/TaskWidget/TaskWidget";
+import CaloriesWidget from "../../components/CaloriesWidget/CaloriesWidget";
+import ShoppingItem from "../../components/ShoppingItem/ShoppingItem";
 
 class Bajaar extends Component {
   constructor(props) {
@@ -30,7 +33,20 @@ class Bajaar extends Component {
       calories: "1000",
       img_url: "https://avatarfiles.alphacoders.com/703/70340.jpg",
       insurance_button: false,
-      store_button: true
+      store_button: true,
+      fitnessStoreList: [
+        { item_name: "Aditya Sharma", item_cost: "100", item_img: "" },
+        { item_name: "Dhawal Agarwal", item_cost: "100", item_img: "" },
+        { item_name: "Rohit Mohanty", item_cost: "100", item_img: "" },
+        { item_name: "Shreyansh", item_cost: "100", item_img: "" },
+        { item_name: "Pratyush Goyal", item_cost: "100", item_img: "" }
+      ],
+      smartbandStoreList: [
+        { item_name: "Mi Band 5", item_cost: "100", item_img: "" },
+        { item_name: "Honor Band 4", item_cost: "100", item_img: "" },
+        { item_name: "Mi Band 3", item_cost: "100", item_img: "" },
+        { item_name: "Amazfir Apex", item_cost: "100", item_img: "" }
+      ]
     };
   }
   render() {
@@ -64,6 +80,54 @@ class Bajaar extends Component {
     } else {
       store_button_class = store_button_class.slice(0, 28);
     }
+
+    let conditionalRender = () => {
+      if (this.state.insurance_button === true) {
+        return (
+          <div className="Insurance">
+            <div className="col col-3">
+              <AdWidget />
+            </div>
+
+            <div className="col col-3">
+              <AdWidget />
+            </div>
+
+            <div className="col col-3">
+              <AdWidget />
+            </div>
+
+            <div className="col col-3">
+              <AdWidget />
+            </div>
+          </div>
+        );
+      }
+      let renderComponents = item => {
+        return (
+          <ShoppingItem
+            item_name={item.item_name}
+            item_price={item.item_cost}
+            item_img_url={item.item_img}
+          />
+        );
+      };
+      if (this.state.store_button === true) {
+        return (
+          <div>
+            <div className="ShoppingList">
+              <h1 className="ShoppingList__Title">Health Supplements</h1>
+              {this.state.fitnessStoreList.map(renderComponents)}
+            </div>
+            <div className="ShoppingList">
+              <h1 className="ShoppingList__Title">Fitness Bands</h1>
+              {this.state.smartbandStoreList.map(renderComponents)}
+            </div>
+          </div>
+        );
+      }
+    };
+
     return (
       <div className="">
         <Navbar />
@@ -79,6 +143,7 @@ class Bajaar extends Component {
               Store
             </h1>
           </div>
+          {conditionalRender()}
         </div>
       </div>
     );
