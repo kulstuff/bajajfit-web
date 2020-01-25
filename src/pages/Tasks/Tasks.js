@@ -7,6 +7,7 @@ import CurrencyWidget from "../../components/CurrencyWidget/CurrencyWidget";
 
 import "./Tasks.scss";
 import TaskWidget from "../../components/TaskWidget/TaskWidget";
+import LeaderBoardWidget from "../../components/LeaderboardWidget/LeaderBoardWidget";
 
 class Tasks extends Component {
   constructor(props) {
@@ -116,7 +117,9 @@ class Tasks extends Component {
           </div>
         </div>
         <div className="Sidebar">
-          <div className="Position__DataWidget"></div>
+        <div className="Position__LeaderboardWidget" >
+            <LeaderBoardWidget Name1="Aditya" HP1="6900" Name2="Akash" HP2="6000" Name3="Rohit" HP3="3000" Name4="Sushant" HP4="2000" Name5="Shruti" HP5="1500"/>
+          </div>
           <div className="Position__AdWidget">
             <AdWidget />
           </div>

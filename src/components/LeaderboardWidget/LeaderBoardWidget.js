@@ -8,13 +8,11 @@ let LeaderBoardWidget = props => {
     Name3,
     Name4,
     Name5,
-    Name6,
     HP1,
     HP2,
     HP3,
     HP4,
-    HP5,
-    HP6
+    HP5
   } = props;
   return (
     <div className="LeaderBoardWidget test">
@@ -31,8 +29,6 @@ let LeaderBoardWidget = props => {
       <div className="LeaderBoardWidget__Name4HP col col-6">{HP4}</div>
       <div className="LeaderBoardWidget__Name5 col col-6">{Name5}</div>
       <div className="LeaderBoardWidget__Name5HP col col-6">{HP5}</div>
-      <div className="LeaderBoardWidget__Name6 col col-6">{Name6}</div>
-      <div className="LeaderBoardWidget__Name6HP col col-6">{HP6}</div>
     </div>
   );
 };

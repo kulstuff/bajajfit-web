@@ -14,4 +14,9 @@
     color: $main-color;
     font-size: 20px;
   }
+  &__LeaderboardWidget {
+    position: relative;
+    left: 0;
+    top: 160px;
+  }
 }

@@ -3,12 +3,13 @@
 .LeaderBoardWidget {
   //   position: absolute;
   width: 275px;
-  height: 325px;
+  height: 250px;
   // left: 249px;
   //top: 799px;
   //border: 1px solid black;
   background: $main-color;
   border-radius: 20px;
+  font-family: Montserrat;
 
   &__LeaderBoard {
     position: absolute;
@@ -26,6 +27,8 @@
     /* Main Color */
 
     color: $white;
+  font-family: Montserrat;
+
   }
   &__Name1 {
     position: absolute;
@@ -43,6 +46,8 @@
     /* Main Color */
 
     color: $white;
+  font-family: Montserrat;
+
   }
   &__Name2 {
     position: absolute;
@@ -60,6 +65,8 @@
     /* Main Color */
 
     color: $white;
+  font-family: Montserrat;
+
   }
 
   &__Name2HP {
@@ -78,6 +85,8 @@
     /* Main Color */
 
     color: $white;
+  font-family: Montserrat;
+
   }
 
   &__Name3 {
@@ -96,6 +105,8 @@
     /* Main Color */
 
     color: $white;
+  font-family: Montserrat;
+
   }
   &__Name3HP {
     position: absolute;
@@ -113,6 +124,8 @@
     /* Main Color */
 
     color: $white;
+  font-family: Montserrat;
+
   }
   &__Name4 {
     position: absolute;
@@ -130,6 +143,8 @@
     /* Main Color */
 
     color: $white;
+  font-family: Montserrat;
+
   }
   &__Name4HP {
     position: absolute;
@@ -147,6 +162,8 @@
     /* Main Color */
 
     color: $white;
+  font-family: Montserrat;
+
   }
   &__Name5 {
     position: absolute;
@@ -164,6 +181,8 @@
     /* Main Color */
 
     color: $white;
+  font-family: Montserrat;
+
   }
   &__Name5HP {
     position: absolute;
@@ -181,6 +200,8 @@
     /* Main Color */
 
     color: $white;
+  font-family: Montserrat;
+
   }
   &__Name6 {
     position: absolute;
@@ -198,6 +219,8 @@
     /* Main Color */
 
     color: $white;
+  font-family: Montserrat;
+
   }
   &__Name6HP {
     position: absolute;
@@ -215,6 +238,8 @@
     /* Main Color */
 
     color: $white;
+  font-family: Montserrat;
+
   }
   &__Name1HP {
     position: absolute;
@@ -232,5 +257,7 @@
     /* Main Color */
 
     color: $white;
+  font-family: Montserrat;
+
   }
 }
