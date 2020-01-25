@@ -140,10 +140,9 @@
     align-self: center;
     margin: 10px 0px;
   }
-  &__Image {
+  &__Image4 {
     position: absolute;
-    left: 50px;
-
+    left: 5.89%;
     right: 0%;
     top: 68%;
     bottom: 21.68%;
@@ -154,7 +153,7 @@
 
     //background: #e8f1f3;
 
-    background-image: url("../../assets/img/doctor.png");
+    background-image: url("../../assets/img/life.png");
     background-size: cover;
   }
 }

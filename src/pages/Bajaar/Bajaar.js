@@ -3,6 +3,9 @@ import React, { Component } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 
 import AdWidget from "../../components/AdWidget/AdWidget";
+import AdWidget2 from "../../components/AdWidget2/AdWidget";
+import AdWidget3 from "../../components/AdWidget3/AdWidget";
+import AdWidget4 from "../../components/AdWidget4/AdWidget";
 import CurrencyWidget from "../../components/CurrencyWidget/CurrencyWidget";
 
 import "./Bajaar.scss";
@@ -80,19 +83,19 @@ class Bajaar extends Component {
         return (
           <div className="Insurance">
             <div className="col col-3">
-              <AdWidget />
+              <AdWidget insurance_name="Health" />
             </div>
 
             <div className="col col-3">
-              <AdWidget />
+              <AdWidget2 insurance_name="Auto" />
             </div>
 
             <div className="col col-3">
-              <AdWidget />
+              <AdWidget3 insurance_name="Mobile" />
             </div>
 
             <div className="col col-3">
-              <AdWidget />
+              <AdWidget4 insurance_name=" Life" />
             </div>
           </div>
         );

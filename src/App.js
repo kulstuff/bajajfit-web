@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter>
-          <Route exact path="/" component={withRouter(LeaderBoardWidget)} />
+          <Route exact path="/" component={withRouter(Dashboard)} />
           <Route exact path="/journal" component={withRouter(Journal)} />
           <Route exact path="/bajaar" component={withRouter(Bajaar)} />
           <Route exact path="/tasks" component={withRouter(Tasks)} />

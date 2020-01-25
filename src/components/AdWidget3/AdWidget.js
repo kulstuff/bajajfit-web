@@ -1,7 +1,7 @@
 import React from "react";
 import "./AdWidget.scss";
 
-let AdWidget = props => {
+let AdWidget3 = props => {
   // let { RecCal, LastMeal, Cal } = props;
   let { insurance_name } = props;
   return (
@@ -18,9 +18,9 @@ let AdWidget = props => {
           Give it a shot using your HP
         </div>
       </div>
-      <div className="AdWidget__Image col col-6"></div>
+      <div className="AdWidget__Image3 col col-6"></div>
     </div>
   );
 };
 
-export default AdWidget;
+export default AdWidget3;
