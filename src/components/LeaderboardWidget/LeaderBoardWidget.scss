@@ -1,0 +1,236 @@
+@import "../../App.scss";
+
+.LeaderBoardWidget {
+  //   position: absolute;
+  width: 275px;
+  height: 325px;
+  // left: 249px;
+  //top: 799px;
+  //border: 1px solid black;
+  background: $main-color;
+  border-radius: 20px;
+
+  &__LeaderBoard {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 75px;
+    top: 22px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $white;
+  }
+  &__Name1 {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 41px;
+    top: 68px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $white;
+  }
+  &__Name2 {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 41px;
+    top: 104px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $white;
+  }
+
+  &__Name2HP {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 150px;
+    top: 104px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $white;
+  }
+
+  &__Name3 {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 41px;
+    top: 139px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $white;
+  }
+  &__Name3HP {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 150px;
+    top: 139px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $white;
+  }
+  &__Name4 {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 41px;
+    top: 170px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $white;
+  }
+  &__Name4HP {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 150px;
+    top: 170px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $white;
+  }
+  &__Name5 {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 41px;
+    top: 204px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $white;
+  }
+  &__Name5HP {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 150px;
+    top: 204px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $white;
+  }
+  &__Name6 {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 41px;
+    top: 240px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $white;
+  }
+  &__Name6HP {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 150px;
+    top: 240px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $white;
+  }
+  &__Name1HP {
+    position: absolute;
+    width: 79px;
+    height: 23px;
+    left: 150px;
+    top: 68px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $white;
+  }
+}

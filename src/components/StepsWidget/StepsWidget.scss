@@ -1,0 +1,71 @@
+@import "../../App.scss";
+
+.StepsWidget {
+  position: absolute;
+  width: 162px;
+  height: 195px;
+  //   border: 1px solid black;
+
+  &__Steps {
+    position: absolute;
+    width: 161px;
+    height: 23px;
+    left: 1px;
+    top: 0px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+    /* Main Color */
+
+    color: $main-color;
+  }
+  &__InnerBox {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: 0px;
+    top: 35px;
+
+    // border: 1px solid black;
+
+    /* White Color */
+
+    background: #ffffff;
+    border-radius: 20px;
+  }
+  &__StepsValue {
+    position: absolute;
+    width: 76px;
+    height: 28px;
+    left: 42px;
+    top: 66px;
+
+    font-family: Montserrat;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: "pnum" on, "lnum" on;
+
+    /* Main Color */
+
+    color: $main-color;
+  }
+  &__ProgressBar {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 16px;
+    top: 16px;
+
+    // border: 7.5px solid $main-color;
+
+    /* White Color */
+  }
+}

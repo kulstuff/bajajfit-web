@@ -44,7 +44,6 @@ class CalorieWidgetLarge extends Component {
       );
     };
 
-    console.log(this.props);
     let { RecCal, Cal } = this.props;
     return (
       <div className="CalorieWidgetLarge">
