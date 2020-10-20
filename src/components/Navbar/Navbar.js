@@ -10,7 +10,7 @@ class Navbar extends Component {
       homeActive: true,
       journalActive: false,
       tasksActive: false,
-      bajaarActive: false
+      bajaarActive: false,
     };
   }
 
@@ -20,7 +20,7 @@ class Navbar extends Component {
         homeActive: false,
         journalActive: true,
         tasksActive: false,
-        bajaarActive: false
+        bajaarActive: false,
       });
     };
     let toggleTasks = () => {
@@ -28,7 +28,7 @@ class Navbar extends Component {
         homeActive: false,
         journalActive: false,
         tasksActive: true,
-        bajaarActive: false
+        bajaarActive: false,
       });
     };
     let toggleBajaar = () => {
@@ -36,7 +36,7 @@ class Navbar extends Component {
         homeActive: false,
         journalActive: false,
         tasksActive: false,
-        bajaarActive: true
+        bajaarActive: true,
       });
     };
     let toggleHome = () => {
@@ -44,29 +44,29 @@ class Navbar extends Component {
         homeActive: true,
         journalActive: false,
         tasksActive: false,
-        bajaarActive: false
+        bajaarActive: false,
       });
     };
 
     let homeButtonClass = {
       container: "Navbar__Button Navbar__Button-Selected",
       icon: "Navbar__Button-Icon Navbar__Button-Selected",
-      text: "Navbar__Button-Text Navbar__Button-Selected"
+      text: "Navbar__Button-Text Navbar__Button-Selected",
     };
     let journalButtonClass = {
       container: "Navbar__Button",
       icon: "Navbar__Button-Icon",
-      text: "Navbar__Button-Text"
+      text: "Navbar__Button-Text",
     };
     let tasksButtonClass = {
       container: "Navbar__Button",
       icon: "Navbar__Button-Icon",
-      text: "Navbar__Button-Text"
+      text: "Navbar__Button-Text",
     };
     let bajaarButtonClass = {
       container: "Navbar__Button",
       icon: "Navbar__Button-Icon",
-      text: "Navbar__Button-Text"
+      text: "Navbar__Button-Text",
     };
     //Home Class
     if (this.state.homeActive === true) {
@@ -140,38 +140,33 @@ class Navbar extends Component {
       <div className="Navbar">
         <div className="Navbar__Logo"></div>
         <div className="Navbar__Button-Container">
-          <Router>
-            <Link to="/" onClick={toggleHome}>
-              <div className={homeButtonClass.container}>
-                <ion-icon name="home" class={homeButtonClass.icon}></ion-icon>
-                <p className={homeButtonClass.text}>Home</p>
-              </div>
-            </Link>
-            <Link to="/journal" onClick={toggleJournal}>
-              <div className={journalButtonClass.container}>
-                <ion-icon
-                  name="journal"
-                  class={journalButtonClass.icon}
-                ></ion-icon>
-                <p className={journalButtonClass.text}>Journal</p>
-              </div>
-            </Link>
-            <Link to="/tasks" onClick={toggleTasks}>
-              <div className={tasksButtonClass.container}>
-                <ion-icon
-                  name="trophy"
-                  class={tasksButtonClass.icon}
-                ></ion-icon>
-                <p className={tasksButtonClass.text}>Tasks</p>
-              </div>
-            </Link>
-            <Link to="/bajaar" onClick={toggleBajaar}>
+          <Link to="/" onClick={toggleHome}>
+            <div className={homeButtonClass.container}>
+              <ion-icon name="home" class={homeButtonClass.icon}></ion-icon>
+              <p className={homeButtonClass.text}>Home</p>
+            </div>
+          </Link>
+          <Link to="/journal" onClick={toggleJournal}>
+            <div className={journalButtonClass.container}>
+              <ion-icon
+                name="journal"
+                class={journalButtonClass.icon}
+              ></ion-icon>
+              <p className={journalButtonClass.text}>Journal</p>
+            </div>
+          </Link>
+          <Link to="/tasks" onClick={toggleTasks}>
+            <div className={tasksButtonClass.container}>
+              <ion-icon name="trophy" class={tasksButtonClass.icon}></ion-icon>
+              <p className={tasksButtonClass.text}>Tasks</p>
+            </div>
+          </Link>
+          {/* <Link to="/bajaar" onClick={toggleBajaar}>
               <div className={bajaarButtonClass.container}>
                 <ion-icon name="cart" class={bajaarButtonClass.icon}></ion-icon>
                 <p className={bajaarButtonClass.text}>Bajaar</p>
               </div>
-            </Link>
-          </Router>
+            </Link> */}
         </div>
         <div className="Navbar__Plant"></div>
       </div>
